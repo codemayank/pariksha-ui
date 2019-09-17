@@ -5,59 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Pariksha TakeHome</title>
   </head>
-  <body>
-    <div id="root">
-      <div class="carousel">
-        <div class="slide fade">
-          <img
-            class="carousel-image"
-            src="https://images.pexels.com/photos/326875/pexels-photo-326875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="cat1"
-          />
-          <p>Text content one</p>
-        </div>
-        <div class="slide fade">
-          <img
-            class="carousel-image"
-            src="https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_960_720.jpg"
-            alt="cat2"
-          />
-          <p>Text content two</p>
-        </div>
-        <div class="slide fade">
-          <img
-            class="carousel-image"
-            src="https://images.pexels.com/photos/533055/pexels-photo-533055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="cat3"
-          />
-          <p>Text content three</p>
-        </div>
+  <body class="root">
+    <div class="carousel">
+      <img class="pariksha-logo" src="pariksha_logo.webp" />
+      <div class="slide">
+        <img
+          class="carousel-image"
+          src="https://d1yn1kh78jj1rr.cloudfront.net/image/preview/rnp9KOKvfjdviiioz/storyblocks-mind-icons-set-simple-set-of-25-mind-vector-icons-for-web-isolated-on-white-background_SMl61yuA7_SB_PM.jpg"
+          alt="cat1"
+        />
       </div>
+      <div class="slide fade">
+        <img
+          class="carousel-image"
+          src="https://d1yn1kh78jj1rr.cloudfront.net/image/preview/rnp9KOKvfjdviiioz/storyblocks-game-industry-icons-set-simple-set-of-25-game-industry-vector-icons-for-web-isolated-on-white-background_HMNcoLR2m_SB_PM.jpg"
+          alt="cat2"
+        />
+      </div>
+    </div>
+    <div class="content">
+      <h2 style="text-align: center">Exam Preparation</h2>
+      <ul class="exam-list">
+        <li>Railways</li>
+        <li>Defence</li>
+        <li>Teaching</li>
+        <li>SSC-CHSL</li>
+        <li>Campus Placements</li>
+        <li>Banking</li>
+      </ul>
       <div class="navigation-dots">
         <span class="dot" onclick="setCurrent(1)"></span>
         <span class="dot" onclick="setCurrent(2)"></span>
         <span class="dot" onclick="setCurrent(3)"></span>
       </div>
-
-      <form class="form">
-        <div class="one">
-          <div class="country-code">+91</div>
-          <div class="phone-input">
-            <input
-              type="tel"
-              pattern="[0-9]{10}"
-              placeholder="mobile number"
-              required
-            />
-          </div>
-        </div>
-        <div>
-          <button type="submit" class="submit-button">Submit</button>
-        </div>
-      </form>
     </div>
+    <form class="form">
+      <div class="form-input">
+        <div class="country-code">+91</div>
+        <div class="phone-input">
+          <input
+            type="tel"
+            pattern="[0-9]{10}"
+            placeholder="mobile number"
+            required
+          />
+        </div>
+      </div>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
     <script src="index.js"></script>
   </body>
 </html>
